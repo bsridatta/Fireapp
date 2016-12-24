@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.sridatta.fireapp.Login">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:layout_marginTop="72dp"
+        android:id="@+id/et_email"
+        android:hint="EMAIL"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="24sp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_marginTop="50dp"
+        android:id="@+id/et_password"
+        android:hint="PASSWORD"
+        android:textSize="24sp"
+        android:layout_below="@+id/et_email"
+        android:layout_alignStart="@+id/et_email" />
+
+    <Button
+        android:text="     LOGIN"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_login"
+        style="@style/FirebaseUI.Button.AccountChooser.GoogleButton"
+        android:textSize="20sp"
+        android:layout_width="200dp"
+        android:layout_below="@+id/et_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="87dp"
+        android:textColor="@color/cast_libraries_material_featurehighlight_outer_highlight_default_color" />
+</RelativeLayout>

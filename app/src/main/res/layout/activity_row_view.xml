@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardElevation="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:id="@+id/iv_imageBook"
+            android:src="@mipmap/add_btn"
+            android:background="#00ffffff"
+            android:adjustViewBounds="true"
+            android:layout_centerHorizontal="true"
+            android:cropToPadding="true"
+            android:layout_height="220dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+
+           android:id="@+id/tv_title"
+           android:text="Wings of Fire"
+           android:textSize="30sp"
+           android:fontFamily="serif"
+           android:layout_margin="5dp"
+           android:paddingLeft="10dp"
+           android:textStyle="normal|bold"
+           android:textColor="@android:color/holo_red_light" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/tv_author"
+            android:text="A.P.J.Abdul Kalam"
+            android:textSize="20sp"
+            android:fontFamily="serif"
+            android:textAlignment="textStart"
+            android:layout_margin="2.5dp"
+            android:paddingLeft="20dp" />
+         <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:id="@+id/tv_publisher"
+             android:fontFamily="serif"
+             android:textSize="20sp"
+             android:text="Universities Press"
+             android:textAlignment="viewStart"
+             android:layout_margin="5dp"
+             android:paddingLeft="20dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_location"
+            android:paddingLeft="20dp"
+            android:fontFamily="serif"
+            android:textSize="20sp"
+            android:text="Biographies:2:12:N6"
+            android:textAlignment="viewStart"
+            android:layout_margin="5dp" />
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
+    <!--
+   <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:tools="http://schemas.android.com/tools"
+   xmlns:card_view="http://schemas.android.com/apk/res-auto"
+       ... >
+       A CardView that contains a TextView
+<android.support.v7.widget.CardView
+xmlns:card_view="http://schemas.android.com/apk/res-auto"
+android:id="@+id/card_view"
+android:layout_gravity="center"
+android:layout_width="200dp"
+android:layout_height="200dp"
+card_view:cardCornerRadius="4dp">
+
+<TextView
+    android:id="@+id/info_text"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+</android.support.v7.widget.CardView>
+    </LinearLayou
+        -->

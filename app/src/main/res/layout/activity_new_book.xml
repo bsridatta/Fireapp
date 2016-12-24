@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_recycle_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sridatta.fireapp.newBook">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="11dp"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:background="@drawable/input_outline"
+            android:padding="10dp"
+            android:layout_height="50dp"
+            android:hint="TITLE"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/et_addTitle" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:background="@drawable/input_outline"
+            android:padding="10dp"
+            android:layout_height="50dp"
+            android:hint="AUTHOR"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/et_addAuthor" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:inputType="textPersonName"
+            android:background="@drawable/input_outline"
+            android:ems="10"
+            android:id="@+id/et_addPublisher"
+            android:padding="10dp"
+            android:layout_height="50dp"
+            android:hint="PUBLISHER"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:inputType="textPersonName"
+            android:background="@drawable/input_outline"
+            android:ems="10"
+            android:id="@+id/et_addLocation"  android:padding="10dp"
+            android:layout_height="50dp"
+            android:hint="LOCATION"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:text="ADD BOOK"
+            android:layout_width="match_parent"
+            android:id="@+id/btn_addBook"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_height="60dp"
+            android:background="@color/colorPrimary"
+
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="#ffffff"
+            android:layout_alignParentStart="true" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/imageBook"
+
+        android:paddingBottom="0dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:padding="5dp"
+        android:layout_height="200dp"
+        android:layout_width="350dp"
+        android:layout_alignParentTop="true"
+        android:src="@mipmap/add_btn"
+        android:background="#00ffffff"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
